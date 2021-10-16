@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "TuskerGrotesk";
+  src: url("../fonts/TuskerGrotesk-5500Medium.woff2");
+}
+
+body {
+  margin: 0;
+  background-color: rgb(239, 240, 232);
+}
+
+.menu {
+  height: 44px;
+  background-color: rgb(17, 199, 111);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.logo {
+  width: 120px;
+  height: 100%;
+  display: inline-block;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  text-decoration: none;
+  color: rgb(240, 241, 232);
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.35px;
+  line-height: 20px;
+  tab-size: 4;
+  text-decoration-color: rgb(239, 240, 232);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-size-adjust: 100%;
+  transition-duration: 0.15s;
+  transition-property: opacity;
+  margin-left: 40px;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+  opacity: 0.75;
+  transition-property: opacity;
+  transition-duration: 150ms;
+}
+
+.listWrapper {
+  display: inline-block;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: rgb(240, 241, 232);
+  tab-size: 4;
+  text-size-adjust: 100%;
+  font-weight: 500;
+}
+
+.menu-inner {
+  width: 77.3%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  margin-top: 76px;
+  width: 77.3%;
+  height: 700px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../assets/images/iza_personalizado.webp");
+  background-position: right top;
+  background-size: 65%;
+  background-repeat: no-repeat;
+}
+
+.text-area {
+  width: fit-content;
+}
+
+.small {
+  font-size: 36px;
+  font-family: "TuskerGrotesk", Arial, Helvetica, sans-serif;
+  line-height: 40px;
+  text-size-adjust: 100%;
+  color: rgb(34, 51, 36);
+  padding: 0;
+  margin: 0;
+}
+
+.medium {
+  font-size: 76px;
+  font-family: "TuskerGrotesk", Arial, Helvetica, sans-serif;
+  line-height: 40px;
+  text-size-adjust: 100%;
+  color: rgb(34, 51, 36);
+  padding: 0;
+  margin: 0;
+}
+
+.large {
+  font-size: 132px;
+  font-family: "TuskerGrotesk", Arial, Helvetica, sans-serif;
+  line-height: 165px;
+  text-size-adjust: 100%;
+  color: rgb(34, 51, 36);
+  padding: 0;
+  margin: 0;
+}
+
+.botao_header {
+  display: inline-block;
+}
+
+.bt_baixeoapp {
+  background-color: rgb(66, 109, 255);
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  letter-spacing: 0.05em;
+  border-radius: 9999px;
+  cursor: pointer;
+  padding: 0.625rem 1.5rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.bt_saibamais {
+  background-color: rgb(66, 109, 255);
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  letter-spacing: 0.05em;
+  border-radius: 9999px;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 280px;
+}
+
+.bt_baixeoapp a,
+.bt_saibamais a {
+  color: #fff;
+  text-decoration: inherit;
+}
+
+.bt_baixeoapp:hover,
+.bt_saibamais:hover {
+  background-color: rgba(54, 90, 214);
+  text-decoration: none;
+  transition: ease-in-out 0.5s;
+}
+
+.bt_elementos {
+  display: none;
+}
+
+.description {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgb(34, 51, 36);
+  margin-top: 32px;
+  max-width: 100%;
+}
+
+.saibamaisdesc {
+  font-family: MontSerrat, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: rgb(34, 51, 36);
+}
+
+.continuacao {
+  background-color: rgba(37, 50, 36, 255);
+  width: 100%;
+  height: 100px;
+}
