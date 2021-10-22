@@ -4,7 +4,9 @@
   position: relative;
   display: flex;
   margin: 0 auto;
-  margin-left: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: space-between;
 }
 
 /*-------------------Menu-------------------------------------*/
@@ -27,14 +29,11 @@ header {
   height: 78px;
   background-color: rgb(17, 199, 111);
   margin: 0;
-  min-width:1300px;
-
 }
 
 .list {
   margin: 0;
   position: relative;
-  padding-left: 8%;
   padding-top: 15px;
 }
 
@@ -49,7 +48,6 @@ li {
   width: 120px;
   height: 40px;
   display: flex;
-  padding-left: 3.5%;
 }
 
 .logo img {
@@ -88,11 +86,11 @@ li a:hover {
 
 .botao_header {
   display: flex;
-  padding-left: 10%;
   padding-top: 15px;
   align-items: center;
   text-align: center;
 }
+
 .bt_baixeoapp{
   background-color: rgb(66, 109, 255);
   font-family: Montserrat, Arial, Helvetica, sans-serif;
@@ -158,6 +156,10 @@ espaco {
   position: absolute;
   clear: both;
   padding-top: 60px;
+}
+
+.image_iza img {
+  flex: 1;
 }
 
 .texto h2 {
