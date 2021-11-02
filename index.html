@@ -10,8 +10,8 @@
   <link rel="shortcut icon" href="images/icon2.png" type="image/png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="styles\style.css" />
-  <link rel="stylesheet" type="text/css" media="screen and (max-width: 700px)" href="styles\mobile.css">
-
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 1170px)" href="styles\mobile.css">
+  <script src="./script.js" ></script>
 
 </head>
 
@@ -33,7 +33,36 @@
       </div>
       <div class="botao_header">
         <div class="bt_baixeoapp">
-          <a id="btn_inicio">Baixe o App</a>
+          <a id="btn_inicio" onclick="displayForm();">Login</a>
+        </div>
+        <div class="wrapper" id="wrapper_login">
+          <div class="login">
+            <div class="sessao">
+              <h1>Iniciar sessão</h1>
+            </div> ㅤㅤㅤ
+            <div class="form">
+              <form id="form_login">
+                <div class="inputs">
+                  <input id="username_login" class="field" type="text" name="username"
+                    placeholder="Informe o seu nome de usuário">
+                  <p id="verify_username_login" class="verificacao"></p>
+                </div>
+                <div class="inputs">
+                  <input id="passwd_login" class="field" type="password" name="pass" placeholder="Informe a sua senha">
+                  <p id="verify_passwd_login" class="verificacao"></p>
+                </div>
+      
+              </form>
+            </div>
+            <div class="logar">
+              <input id="button_login" type="submit" class="btn_login" value="Continuar" onclick="login();">
+              <a class="link_cadastro" id="link_cadastrar">Não faz parte do PicPay? Cadastre-se agora.</a>
+            </div>
+            <div class="dialog" id="dialog_login">
+              <p id="mensagem_login" class="mensagem">mensagem qualquer</p>
+              <input id="btn_OK_login" type="submit" class="btn_OK" value="OK">
+            </div>
+          </div>
         </div>
       </div>
 
@@ -80,7 +109,7 @@
         </div>
         <p class="saibamaisdesc">* Consulte todas as condições no site da campanha</p>
         </div>
-
+        
   <!--- rodape para mobile -->
 
   <footer id="footer" class="footer">

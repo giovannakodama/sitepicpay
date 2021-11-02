@@ -299,3 +299,93 @@ p {
   text-decoration: underline;
   font-size: 22px;
 }
+
+\\-------------------Busca-------------------------------------\\
+
+.busca {
+  display: flex;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-top: 100px;
+  flex-direction: column;
+}
+
+.pesquisa,
+.result_busca {
+  padding: 0;
+}
+
+.search {
+  font-family: "SF Pro Text Regular", sans-serif;
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  visibility: visible;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+}
+
+.search:focus {
+  outline: 0;
+}
+
+.btn_login:hover{
+  outline: thin dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
+  border:none !important;
+}
+
+.search:placeholder {
+  color: #c7c6c6;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+.button_api {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  margin: 0px;
+  height: auto;
+  margin-top:  10px;
+  background-color: rgb(66, 109, 255);
+  text-transform: uppercase;
+  font-family: TuskerGrotesk, Arial, Helvetica, sans-serif;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  letter-spacing: 0.05em;
+  border-radius: 9999px;
+  cursor: pointer;
+  padding: 5px;
+  line-height: 24px;
+  font-weight: inherit;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: inherit;
+  border: none;
+}
+
+.button_api:hover {
+  background-color: rgba(54, 90, 214);
+  text-decoration: none;
+  transition: ease-in-out 0.5s;
+}
+
+.busca a {
+  font-size: 18px;
+  color: black;
+}
+
+.login{
+  width: 100%;
+  margin-top: 50px;
+}
