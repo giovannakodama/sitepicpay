@@ -1,0 +1,30 @@
+.searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.searchInput {
+    align-self: center;
+    font-size: 30px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.searchButton {
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: rgb(54, 90, 214);
+    color: white;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 200ms linear;
+}
+
+.searchButton:hover {
+    background-color: rgb(54, 90, 150);
+}

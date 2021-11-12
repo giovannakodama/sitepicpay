@@ -1,8 +1,8 @@
-const reqres = "https://reqres.in/api/login/";
+const reqres = "https://reqres.in/api/";
 const var_api = reqres;
 
 function logo() {
-  var wrapper_index = document.getElementById("wrapper_index");
+  var wrapper_index = doent.getElementById("wrapper_index");
   var wrapper_login = document.getElementById("wrapper_login");
   var wrapper_busca = document.getElementById("wrapper_busca");
   var wrapper_cadastro = document.getElementById("wrapper_cadastro");
@@ -362,59 +362,6 @@ function cadastrar() {
   });
 }
 
-function login() {
-  var form = document.getElementById("button_login");
-  var username = document.getElementById("username_login");
-  var passwd = document.getElementById("passwd_login");
-  var verify_user = document.getElementById("verify_username_login");
-  var verify_passwd = document.getElementById("verify_passwd_login");
-  var resposta = 400;
-  var btn_OK = document.getElementById("btn_OK_login");
-  var dialog = document.getElementById("dialog_login");
-  var mensagem = document.getElementById("mensagem_login");
-
-  if (verificaEmail(username)) {
-    verify_user.innerHTML = "";
-  } else {
-    username.classList.toggle("toggleFocusRed");
-    verify_user.innerHTML = "Não é um e-mail válido";
-    return;
-  }
-
-  if (passwd.value.length < 3) {
-    verify_passwd.innerHTML = "Não é uma senha válida";
-    return;
-  } else {
-    verify_passwd.innerHTML = "";
-  }
-
-  if (verificaEmail(username) && passwd.value.length >= 3) {
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = function () {
-      if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-        console.log("Login sucesso!");
-      } else if (xmlHttp.readyState == 4) {
-        console.log(xmlHttp)
-        verify_passwd.innerText = "Usuário/Senha inválidos!";
-      }
-    };
-    xmlHttp.open("POST", var_api, true);
-    xmlHttp.setRequestHeader("Content-Type", "application/json");
-    xmlHttp.setRequestHeader('Accept', '*/*');
-    xmlHttp.setRequestHeader('Access-Control-Allow-Origin', '*');
-    var request = {
-      "email": username.value,
-      "password": passwd.value
-    }
-    console.log(request)
-    xmlHttp.send(request);
-  } else {
-    mensagem.innerHTML = "Usuário e/ou senha inválidos!";
-    dialog.className = "dialog show";
-    resposta = 400;
-  }
-}
-
 function cadastro() {
   var link_cadastrar = document.getElementById("link_cadastrar");
 
@@ -439,7 +386,22 @@ function mobile() {
 }
 
 function displayForm() {
-  var login_form = document.getElementById("wrapper_login");
-  if (login_form.style.display === "none") login_form.style.display = "block";
-  else login_form.style.display = "none";
+  window.location.replace('login/index.html')
+}
+
+function menu() {
+  window.location.replace('../index.html')
+}
+
+function login(e) {
+  const email = document.getElementById('email_input')
+  const password = document.getElementById('password_input')
+  if (email.value.trim() === '' || password.value.trim() === '') return
+  if (email.value === 'eve.holt@reqres.in' && password.value === 'cityslicka') {
+    document.cookie = "email=eve.holt@reqres.in"
+    location.replace('../user/index.html')
+  } else {
+    email.classList.add('wrong-input')
+    password.classList.add('wrong-input')
+  }
 }

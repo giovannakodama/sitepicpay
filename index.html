@@ -18,7 +18,7 @@
 <body>
   <header class="menu">
     <div class="wrapper">
-      <div class="logo" onclick="logo()">
+      <div class="logo">
         <img src="images/logo-picpay-white.svg" />
       </div>
       <div class="list">
@@ -31,38 +31,9 @@
           <li><a href="#">Show do Milhão</a></li>
         </ul>
       </div>
-      <div class="botao_header">
+      <div class="botao_header" onclick="displayForm();">
         <div class="bt_baixeoapp">
-          <a id="btn_inicio" onclick="displayForm();">Login</a>
-        </div>
-        <div class="wrapper" id="wrapper_login">
-          <div class="login">
-            <div class="sessao">
-              <h1>Iniciar sessão</h1>
-            </div> ㅤㅤㅤ
-            <div class="form">
-              <form id="form_login">
-                <div class="inputs">
-                  <input id="username_login" class="field" type="text" name="username"
-                    placeholder="Informe o seu nome de usuário">
-                  <p id="verify_username_login" class="verificacao"></p>
-                </div>
-                <div class="inputs">
-                  <input id="passwd_login" class="field" type="password" name="pass" placeholder="Informe a sua senha">
-                  <p id="verify_passwd_login" class="verificacao"></p>
-                </div>
-      
-              </form>
-            </div>
-            <div class="logar">
-              <input id="button_login" type="submit" class="btn_login" value="Continuar" onclick="login();">
-              <a class="link_cadastro" id="link_cadastrar">Não faz parte do PicPay? Cadastre-se agora.</a>
-            </div>
-            <div class="dialog" id="dialog_login">
-              <p id="mensagem_login" class="mensagem">mensagem qualquer</p>
-              <input id="btn_OK_login" type="submit" class="btn_OK" value="OK">
-            </div>
-          </div>
+          <a id="btn_inicio">Login</a>
         </div>
       </div>
 
