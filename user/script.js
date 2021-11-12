@@ -1,4 +1,5 @@
 (() => {
     const cookies = document.cookie
-    if (!cookies) return location.replace('../index.html');
+    console.log(cookies)
+    //if (!cookies) return location.replace('../index.html');
 })()
